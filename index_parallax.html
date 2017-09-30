@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+  <link href=' http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+  <link href=' http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <title>Jackson Street Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+
+<style>
+  p {
+    font-family: Crimson Text;
+    font-size: 18px;
+  }
+  .scroll-to{
+    transition: all .6s ease-out;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("resources/images/discoballsmirrored.jpg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #btnControl {
+      display: none;
+  }
+
+  #btnControl:checked + label > img {
+    transition: .6s all;
+   -webkit-filter: greyscale(0%);
+    filter: grayscale(0%);
+
+  }
+  h3 {
+    font-family: EB Garamond;
+    font-size: 36px
+  }
+  .overlay-text {
+    transition: all .9s ease-out;
+    font-family: Crimson Text;
+    color: white;
+    font-size: 48px;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0));
+  }
+  .overlay-text:hover {
+    transition: 0.6s all;
+    font-size: 48px;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1));
+  }
+  }
+  .wide-text{
+    transition: all .6s ease-out;
+  }
+  .wide-text:hover{
+    transition: .6s all;
+    background: -webkit-linear-gradient(left,white,yellow,white)!important;
+  }
+  .headerimg {
+    width:100%;
+    /*max-height: 500px;*/
+    align: center;
+    /*background-size: cover;*/
+    /*border: solid black;
+    /*border-width: 100px;*/
+    /*border-width: 100px;*/
+  	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	-webkit-transition: .6s ease-in-out;
+  	transition: .6s ease-out;
+  }
+  .headerimg:hover{
+    transition: .6s ease-out;
+    -webkit-filter: grayscale(0%);
+  	filter: grayscale(0%);
+  }
+  .profileimg{
+    transition: all .6s ease-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .profileimg:hover{
+    transition: .6s all;
+    -webkit-filter: blur(2px);
+     filter: blur(2px);
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+  }
+  .w3-bar-item{
+    border-radius: 25px;
+    font-family: Crimson Text;
+    font-size: 20px;
+    /*font-style: italic;*/
+    transition: all .6s ease-out;
+    background: -webkit-linear-gradient(left,white,white,white,yellow,white,white,white)!important;
+  }
+  .w3-bar-item:hover{
+    transition: .6s all;
+    background: -webkit-linear-gradient(left,white,white,yellow,white,yellow,white,white)!important;
+  }
+  .button-item{
+    font-family: Crimson Text;
+    font-size: 20px;
+    /*font-style: italic;*/
+    transition: all .6s ease-out;
+    background: -webkit-linear-gradient(left,white,white,lightgrey,white,white)!important;
+  }
+  .button-item:hover{
+    transition: .6s all;
+    background: -webkit-linear-gradient(left,white,lightgrey,white,lightgrey,white)!important;
+  }
+  }
+</style>
+
+<!-- Navbar (sit on top) -->
+<!-- <div class="w3-left">
+  <a class="w3-text-lime">
+    Left
+  </a>
+</div> -->
+<div class="w3-top w3-yellow" style="opacity:0.9">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+    <a href="index.html" class="w3-bar-item w3-button">Jackson Street Design</a>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="projects.html" class="w3-bar-item w3-button">Projects</a>
+      <a href="notebook.html" class="w3-bar-item w3-button">Notebook</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<div style="width:device-width;" id="home" class="parallax headerimg">
+    <!-- <input type="checkbox" id="btnControl"/>
+    <label class="btn" for="btnControl"><img class="headerimg" src="resources/images/discoballsmirrored.jpg" alt="Disco Balls"/></label> -->
+  <!-- <div class="w3-display-middle w3-center">
+    <div class="w3-padding w3-text-white overlay-text">
+      <b>It's Party Time</b>
+    </div>
+  </div> -->
+</div>
+
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+
+  <!-- About Section -->
+  <div name="about" class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom"><b>About Us</b></h3>
+    <p>We Are A <a class="wide-text">Collaborative</a> Design Studio Located in Dallas, TX. We Specialize in the Designing of <a href="parties.html">Parties<a>, Places, and Homes.
+  </div>
+
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class = "profileimg" src="resources/images/andie.jpg" alt="Andie Jackson" style="width:100%">
+      <h3>Andrea "Andie" Jackson</h3>
+      <p class="w3-opacity">CEO & Founder</p>
+      <p>I'm Andie Jackson and I design homes, events and even you. Follow me and see where my creativity leads next!</p>
+      <!-- <p><a href="#andie"><button class="w3-button button-item w3-hover-yellow w3-opacity-min">Read More</button></a></p> -->
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class = "profileimg"src="resources/images/jojo.jpg" alt="Jojo Jackson" style="width:100%">
+      <h3>Jojo Jackson</h3>
+      <p class="w3-opacity">Lead Designer</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <!-- <p><a href="#jojo"><button class="w3-button button-item w3-hover-yellow w3-opacity-min">Read More</button></a></p> -->
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class = "profileimg"src="resources/images/ruby.jpg" alt="Ruby Jackson" style="width:100%;">
+      <h3>Ruby Jackson</h3>
+      <p class="w3-opacity">Assistant Designer</p>
+      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+      <!-- <p><a href="#ruby"><button class="w3-button button-item w3-hover-yellow w3-opacity-min">Read More</button></a></p> -->
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <img class = "profileimg" src="resources/images/demo_portrait4.jpg" alt="You" style="width:100%">
+      <h3>You</h3>
+      <p class="w3-opacity">Assistant Designer</p>
+      <p>You want your next event to be gorgeous, fabulous, and fun!</p>
+      <!-- <p><a href="#you"><button class="w3-button button-item w3-hover-yellow w3-opacity-min">Read More</button></a></p> -->
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div name="contact" class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom"><b>Contact</b></h3>
+    <p><b>Let's get in touch and talk about your and our next project.</b></p>
+    <p><a href="https://www.facebook.com/jacksonstreetdesign">Facebook</a><br>
+      <u><a href="mailto:andiejackson@jaskconstreetdesign.com?subject=Lets%20Work%20Together!">Email</u></a><br>
+      <u><a href="https://www.google.com/maps/place/6522+Meadow+Rd,+Dallas,+TX+75230/@32.885962,-96.7944385,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9e2d2b33b6ad:0x348f2ebab0a43fa6!8m2!3d32.885962!4d-96.7922498"> Address</a></u>: 6522 Meadow Road
+      Dallas, Texas 75230 <br>
+      <u>Phone</u>: 214.478.9070 <br>
+      </p>
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- AddToAny BEGIN -->
+<div class="w3-bottom w3-padding-24" id="projects">
+  <div class="a2a_kit a2a_kit_size_32 a2a_default_style w3-display-middle">
+  <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+  <a class="a2a_button_facebook"></a>
+  <a class="a2a_button_twitter"></a>
+  <a class="a2a_button_pinterest"></a>
+  <a class="a2a_button_email"></a>
+  </div>
+  <script>
+  var a2a_config = a2a_config || {};
+  a2a_config.linkname = "Jackson Street Design";
+  a2a_config.linkurl = "https://www.jacksonstreetdesign.com";
+  a2a_config.color_main = "D7E5ED";
+  a2a_config.color_border = "AECADB";
+  a2a_config.color_link_text = "333333";
+  a2a_config.color_link_text_hover = "333333";
+  </script>
+  <script async src="https://static.addtoany.com/menu/page.js"></script>
+</div>
+</body>
+</html>

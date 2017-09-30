@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+  <link href=' http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
+  <link href=' http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
+  <title>Jackson Street Design</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+<style>
+  .w3-display-topleft
+  {
+    font-family: EB Garamond;
+  }
+  /*START OF DROPDOWN MENU*/
+  .container {
+      overflow: hidden;
+      background-color: #333;
+      /*font-family: Arial;*/
+  }
+
+  .container a {
+      float: left;
+      font-size: 5vw;
+      color: white;
+      text-align: center;
+      padding: .5vw .5vw;
+      /*text-decoration: none;*/
+  }
+
+  .dropdown {
+    transition: all .6s;
+      float: left;
+      overflow: hidden;
+  }
+
+  .dropdown .dropbtn {
+      transition: .6s all;
+      /*float:left;*/
+      /*vertical-align: middle;*/
+      transition: all .6s ease-out;
+      border-radius: 2vh;
+      font-family: EB Garamond;
+      font-weight: bold;
+      font-size: 2vh;
+      cursor: pointer;
+      /*font-size: 16vw;*/
+      border: none;
+      outline: none;
+      padding:1vh 7vh;
+      background: -webkit-linear-gradient(left,white,white,white,yellow,white,white,white)!important;
+  }
+
+  .container a:hover, .dropdown:hover .dropbtn {
+    transition: .6s all;
+      background: -webkit-linear-gradient(left,white,white,yellow,white,yellow,white,white)!important;
+  }
+
+  .dropdown-content {
+      font-family: EB Garamond;
+      font-size: 1vw;
+      font-weight: bold;
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 1vw;
+      box-shadow: 0vw .8vw 1vw 0vw rgba(0,0,0,0.1);
+      z-index: 1;
+  }
+
+  .dropdown-content a {
+    transition: all .6s ease-out;
+      align: center;
+      float: none;
+      color: black;
+      padding: 1vw 2vw;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+  }
+
+  .dropdown-content a:hover {
+    transition: .6s all;
+      background-color: #ddd;
+  }
+
+  .show {
+      display: block;
+  }
+  /*END OF DROPDOWN MENU*/
+
+  a:hover{
+    color: grey;
+
+  }
+  p {
+    font-family: Crimson Text;
+    font-size: 2vh;
+  }
+  h3 {
+    font-family: EB Garamond;
+    font-size: 2.5vh
+  }
+
+  #btnControl {
+      display: none;
+  }
+
+  #btnControl:checked + label > img {
+    transition: .6s all;
+   -webkit-filter: greyscale(0%);
+    filter: grayscale(0%);
+
+  }
+
+  .overlay-text {
+    transition: all .9s ease-out;
+    font-family: Crimson Text;
+    color: white;
+    font-size: 1vw;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0));
+  }
+  .overlay-text:hover {
+    transition: 0.6s all;
+    font-size: 1vw;
+    background: -webkit-linear-gradient(left,rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,1),rgba(0,0,0,1));
+  }
+  }
+  .wide-text{
+    border-radius: 1vw;
+    font-family: Crimson Text;
+    font-size: 2.5vw;
+    color: white;
+    transition: all .6s ease-out;
+  }
+  .wide-text:hover{
+    transition: .6s all;
+    /*background: -webkit-linear-gradient(left,white,yellow,white)!important;*/
+  }
+  .headerimg {
+    width:100vw;
+    height: 60vh;
+    /*max-height: 500vw;*/
+    align: center;
+    /*background-size: cover;*/
+    /*border: solid black;
+    /*border-width: 100vw;*/
+    /*border-width: 100vw;*/
+  	-webkit-filter: grayscale(100%);
+  	filter: grayscale(100%);
+  	-webkit-transition: .6s ease-in-out;
+  	transition: .6s ease-out;
+  }
+  .headerimg:hover{
+
+  }
+  .profileimg{
+    transition: all .6s ease-out;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: .2vh solid black;
+    width:25vh;
+  }
+  .profileimg:hover{
+    transition: .6s all;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: .2vh solid white;
+
+    /*-webkit-filter: blur(2vw);
+     filter: blur(2vw);*/
+  }
+
+  .w3-bar-item{
+    border-radius: 1vw;
+    font-family: Crimson Text;
+    font-size: 2.5vh;
+    /*font-style: italic;*/
+    transition: all .6s ease-out;
+    background: -webkit-linear-gradient(left,white,white,white,yellow,white,white,white)!important;
+  }
+  .w3-bar-item:hover{
+    transition: .6s all;
+    background: -webkit-linear-gradient(left,white,white,yellow,white,yellow,white,white)!important;
+  }
+  .button-item{
+    font-family: Crimson Text;
+    font-size: 1.2vw;
+    /*font-style: italic;*/
+    transition: all .6s ease-out;
+    background: -webkit-linear-gradient(left,white,white,lightgrey,white,white)!important;
+  }
+  .button-item:hover{
+    transition: .6s all;
+    background: -webkit-linear-gradient(left,white,lightgrey,white,lightgrey,white)!important;
+  }
+  .section-padding{
+    padding-top:2vh!important;
+    padding-bottom:2vh!important;
+  }
+  .mobile_menu{
+    display: none;
+  }
+  /*///////////////////////////////////////////*/
+  /*/ MOBILE STYLE WITH LANDSCAPE ORIENTATION /*/
+  /*///////////////////////////////////////////*/
+  @media only screen and (max-width: 760px) and (orientation:landscape)
+  {
+    .mobile_menu {
+      display: inline;
+    }
+    .headerimg{
+      display: inline;
+    }
+     p
+     {
+       font-family: Crimson Text;
+       font-size: 3vw;
+     }
+     h3
+     {
+       font-family: EB Garamond;
+       font-size: 4vw;
+     }
+     .w3-bar-item
+     {
+       border-radius: 1vw;
+       font-family: Crimson Text;
+       font-size: 1.5vw;
+       /*font-style: italic;*/
+       transition: all .6s ease-out;
+       background: -webkit-linear-gradient(left,white,white,white,yellow,white,white,white)!important;
+     }
+     .profileimg
+     {
+       transition: all .6s ease-out;
+       -webkit-filter: grayscale(100%);
+       filter: grayscale(100%);
+       border: .2vw solid black;
+       width:30vw;
+     }
+  }
+  @media only screen and (max-width: 760px) and (orientation:portrait)
+  {
+    .headerimg{
+      display: inline;
+    }
+    .mobile_menu {
+      display: inline;
+    }
+    .w3-button
+    {
+      display: flex;
+      font-family: EB Garamond;
+    }
+    .mobile_menu
+    {
+      /*display:table;*/
+    }
+    .headerimg{
+      height: 50vh;
+    }
+    .profileimg
+    {
+      width: 60vw;
+    }
+    h3
+    {
+      font-size: 4vh;
+    }
+    p
+    {
+      font-size: 3vh;
+    }
+    a
+    {
+      font-size: 3vh;
+      align:left;
+    }
+
+  }
+
+
+</style>
+  <div class="w3-top w3-yellow" id="top_bar">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+      <a href="index.html" class="w3-bar-item w3-button w3-display-middle" id="title"><b>Jackson Street Design</b></a>
+      <div class="dropdown w3-left w3-hide-small" id="dropdown"> <!-- w3-right w3-hide-small"> -->
+        <button class="dropbtn" onclick="myFunction()"><img src="resources/menu-icon.png" style="height:2vh; width: auto;"></button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="projects.html" class="w3-button"><b>Projects</b></a>
+          <a href="notebook.html" class="w3-button">Notebook</a>
+          <a href="index.html#about" class="w3-button">About</a>
+          <a href="index.html#contact" class="w3-button">Contact</a>
+        </div>
+      </div>
+
+      <!-- Float links to the right. Hide them on small screens -->
+      <!-- <a id="mobile_menu" style="display:none">
+        <a href="projects.html" class="w3-bar-item w3-button"><b>Projects</b></a>
+        <a href="notebook.html" class="w3-bar-item w3-button"><b>Notebook</b></a>
+        <a href="#about" class="w3-bar-item w3-button"><b>About</b></a>
+        <a href="#contact" class="w3-bar-item w3-button"><b>Contact</b></a>
+      </a> -->
+    </div>
+  </div>
+
+  <!-- Project Section -->
+  <div style="width:device-width;" id="home">
+      <input type="checkbox" id="btnControl"/>
+      <label class="btn" for="btnControl"><img class="headerimg" src="resources/images/discoballsmirrored.jpg" alt="Disco Balls" id="headerimg"/></label>
+    <!-- <div class="w3-display-middle w3-center">
+      <div class="w3-padding w3-text-white overlay-text">
+        <b>It's Party Time</b>
+      </div>
+    </div> -->
+  </div>
+  <div class="w3-content w3-padding" style="max-width:1564px">
+    <div name="about" class="w3-container">
+      <h3 class="wide-text w3-display-topmiddle w3-center-text" style="color:white; font-size:10vh; display:none; text-align: center; font-family:Crimson Text" id="mobile_title">Jackson Street Design</h3>
+    </div>
+
+    <!-- <div name="mobile_menu" class="w3-container mobile_menu"> -->
+    <div class="mobile_menu">
+      <a href="index.html" class="w3-button">Home</a>
+      <a href="projects.html" class="w3-button">Projects</a>
+      <a href="notebook.html" class="w3-button">Notebook</a>
+      <a href="index.html#about" class="w3-button">About</a>
+      <a href="index.html#contact" class="w3-button">Contact</a>
+    </div>
+    <div class="w3-container" id="project">
+      <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16"><b>Projects</b></h3>
+
+
+
+      <div class="w3-col l3 m6 w3-margin-right">
+        <div class="w3-display-container">
+          <a href = "parties.html">
+          <div class="w3-display-topleft w3-black w3-padding w3-hover-text-yellow w3-padding" style="font-family:EB Garamond">Parties</div>
+          <img  class="w3-hover-shadow" src="resources/images/discoballs.png" alt="House" style="height:50vh">
+          </a>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-right">
+        <div class="w3-display-container" id="places">
+          <a href = "#places">
+          <div class="w3-display-topleft w3-black w3-padding w3-hover-text-yellow w3-padding">Places</div>
+          <img  class="w3-hover-shadow" src="resources/images/flowers.jpg" alt="House" style="height:50vh">
+          </a>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-right">
+        <div class="w3-display-container" id="homes">
+          <a href = "#homes">
+          <div class="w3-display-topleft w3-black w3-padding w3-hover-text-yellow w3-padding">Homes</div>
+          <img  class="w3-hover-shadow" src="resources/images/chandelier.jpg" alt="House" style="height:50vh">
+          </a>
+        </div>
+      </div>
+    <!-- <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="#">
+        <div class="w3-display-topleft w3-black w3-padding w3-hover-text-yellow w3-padding">Barn House</div>
+        <img  class="w3-hover-shadow" src="#image" alt="House" style="width:100%">
+      </div>
+    </div> -->
+    </div>
+  </div>
+
+  <!-- AddToAny BEGIN -->
+  <div class="w3-bottom w3-padding-24" id="projects">
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style w3-display-middle">
+    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <a class="a2a_button_facebook"></a>
+    <a class="a2a_button_twitter"></a>
+    <a class="a2a_button_pinterest"></a>
+    <a class="a2a_button_email"></a>
+    </div>
+    <script>
+    var a2a_config = a2a_config || {};
+    a2a_config.linkname = "Jackson Street Design";
+    a2a_config.linkurl = "https://www.jacksonstreetdesign.com";
+    a2a_config.color_main = "D7E5ED";
+    a2a_config.color_border = "AECADB";
+    a2a_config.color_link_text = "333333";
+    a2a_config.color_link_text_hover = "333333";
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
+  </div>
+  <!-- AddToAny END -->
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+      }
+    }
+
+    $( document ).ready(function() {
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+        if (isMobile.matches) {
+            // document.getElementById("dropdown").style.display = "none"
+            document.getElementById("projects").style.display = "none";
+            document.getElementById("top_bar").style.display = "none";
+            document.getElementById("mobile_title").style.display = "inline-block";
+            document.getElementById("mobile_dropdown").style.display = "inline-block";
+            document.getElementById("mobile_menu").style.display = "inline-block";
+
+
+            // document.getElementsByClassName("profileimg").width = "40vh";
+            // document.getElementById("title").innerHTML = "JSD";
+            document.getElementById("myDropdown").style.padding ="1vh 1vh";
+            document.getElementById("headerimg").style.height = "40vh";
+            // document.getElementById("myDropdown").style.overflow = "visible";
+        }
+     });
+  </script>
+
+
+  <!-- <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Summer House</div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Brick House</div>
+        <img src="/w3images/house5.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Renovated</div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">Barn House</div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:99%">
+      </div>
+    </div>
+  </div> -->
+</body>
+</html>
