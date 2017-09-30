@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" type="image/ico" href="resources/favicon.ico"/>
+  <link rel="shortcut icon" type="image/ico" href="Resources/favicon.ico"/>
   <link href=' http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
   <link href=' http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <link href=' http://fonts.googleapis.com/css?family=Bungee+Outline' rel='stylesheet' type='text/css'>
@@ -12,245 +12,244 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="secondary.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="Resources/instantclick.min.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head>
 
 <body>
 
-<!-- Desktop Top Bar -->
- <div class="w3-top" style="opacity: 1" id="top_bar">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
-    <a href="index.html" class="w3-bar-item w3-button w3-display-middle" id="title">JACKSON STREET DESIGN</a>
-    <div class="dropdown w3-left" id="dropdown"> <!-- w3-right w3-hide-small"> -->
-      <button class="dropbtn" onclick="myFunction()"><img src="Resources/menu-icon.png" style="height:2vh; width:auto;"></button>
-      <div class="dropdown-content" id="myDropdown" style="font-size:18px">
-        <!-- <a href="projects.html" class="w3-button"><b>Projects</b></a> -->
-        <a href="notebook.html" class="w3-button">Notebook</a>
-        <a href="#about" class="w3-button">About</a>
-        <a href="#contact" class="w3-button">Contact</a>
+  <!-- Desktop Top Bar -->
+   <div class="w3-top" style="opacity: 1" id="top_bar">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card-2">
+      <a href="index.html" class="w3-bar-item w3-button w3-display-middle" id="title">JACKSON STREET DESIGN</a>
+      <div class="dropdown w3-left" id="dropdown"> <!-- w3-right w3-hide-small"> -->
+        <button class="dropbtn" onclick="myFunction()"><img src="Resources/menu-icon.png" style="height:2vh; width:auto;"></button>
+        <div class="dropdown-content" id="myDropdown" style="font-size:18px">
+          <!-- <a href="projects.html" class="w3-button"><b>Projects</b></a> -->
+          <a href="notebook.html" class="w3-button">Notebook</a>
+          <a href="#about" class="w3-button">About</a>
+          <a href="#contact" class="w3-button">Contact</a>
+        </div>
+      </div> <!-- Float links to the right. Hide them on small screens -->
+    </div>
+  </div>
+
+  <!-- Desktop Page BEGIN -->
+  <div class="w3-content w3-padding-64" style="max-width:100vw; padding-left:64px;padding-right:64px;" id="page_content">
+
+
+
+    <div name="about" class="w3-container" id="recent posts">
+      <h2 class="w3-border-bottom"><b>Recent Posts</b></h2>
+
+      <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
+        <h1><a href="farm_to_table.html">Farm to Table Anniversary Celebration</a></h1>
+        <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
+        <p class="w3-col" style="top:0px">
+          This April, I was honored to design and host a Texas Farm to Table Anniversary Celebration for my friends Annelise Pedersen and Chris Spafford. Every five years, Annelise and Chris celebrate their residence in the U.S. This year, they opened their beautiful new Forest Hills home to friends, family and colleagues. When I say beautiful, I mean House Beautiful&trade; caliber beautiful. <a href="farm_to_table.html" class="read-more"> Read more...</a>
+        </p> <img src="Resources/Blog_Entries/Farm_To_Table/2.jpg" alt="House" class="w3-col">
       </div>
-    </div> <!-- Float links to the right. Hide them on small screens -->
-  </div>
-</div>
 
-<!-- Desktop Page BEGIN -->
-<div class="w3-content w3-padding-64" style="max-width:100vw; padding-left:64px;padding-right:64px;" id="page_content">
+      <div class="w3-col w3-display-container" style="width:33%; transition: ease all .6">
+        <h3><a href=""><b>Guest Bedroom</b></a></h3>
+        <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
+        <img src="Resources/Blog_Entries/Guest_Bedroom/untitled1.png" alt="House" style="height:500px">
+      </div>
 
+      <div class="w3-col w3-display-container" style="width:33%;">
+        <h3><a href=""><b>Media Room</b></a></h3>
+        <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
+        <img src="Resources/Blog_Entries/Media_Room/untitled3.png" alt="House" style="height:500px;">
+      </div>
 
-
-  <div name="about" class="w3-container" id="recent posts">
-    <h2 class="w3-border-bottom"><b>Recent Posts</b></h2>
-
-    <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
-      <h1><a href="farm_to_table.html">Farm to Table Anniversary Celebration</a></h1>
-      <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
-      <p class="w3-col" style="top:0px">
-        This April, I was honored to design and host a Texas Farm to Table Anniversary Celebration for my friends Annelise Pedersen and Chris Spafford. Every five years, Annelise and Chris celebrate their residence in the U.S. This year, they opened their beautiful new Forest Hills home to friends, family and colleagues. When I say beautiful, I mean House Beautiful&trade; caliber beautiful. <a href="farm_to_table.html" class="read-more"> Read more...</a>
-      </p> <img src="Resources/Blog_Entries/Farm_To_Table/2.jpg" alt="House" class="w3-col">
+      <div class="w3-col w3-display-container" style="width:34%;">
+        <h3><a href=""><b>Blog Post Title Here</b></a></h3>
+        <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
+        <img src="Resources/Images/DiscoBalls.png" alt="House" style="height:500px">
+      </div>
     </div>
 
-    <div class="w3-col w3-display-container" style="width:33%; transition: ease all .6">
-      <h3><a href=""><b>Guest Bedroom</b></a></h3>
-      <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
-      <img src="Resources/Blog_Entries/Guest_Bedroom/untitled1.png" alt="House" style="height:500px">
+
+    <!-- About Section -->
+    <div name="about" class="w3-container" id="about">
+      <h2 class="w3-border-bottom"><b>About</b></h2>
+      <h4>We are a Collaborative Design Studio Located in Dallas, TX and Specializing in the Designing of Parties, Places, and Homes.</h4>
     </div>
 
-    <div class="w3-col w3-display-container" style="width:33%;">
-      <h3><a href=""><b>Media Room</b></a></h3>
-      <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
-      <img src="Resources/Blog_Entries/Media_Room/untitled3.png" alt="House" style="height:500px;">
+    <div class="w3-container w3-grayscale">
+      <div class="w3-col w3-margin-bottom" style="width:25%">
+        <img src="Resources/Images/andie.jpg" alt="Andie Jackson" style="height:200px;">
+        <h2>Andrea "Andie" Jackson</h2>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>I'm Andie Jackson and I design homes, events and even you. Follow me and see where my creativity leads next!</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:25%">
+        <img src="Resources/Images/jojo.jpg" alt="Jojo Jackson"style="height:200px;">
+        <h2>Jojo Jackson</h2>
+        <p class="w3-opacity">Lead Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:25%">
+        <img src="Resources/Images/demo_portrait3.jpg" alt="Ruby Jackson"style="height:200px;">
+        <h2>Ruby Jackson</h2>
+        <p class="w3-opacity">Assistant Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:25%">
+        <img src="Resources/Images/demo_portrait4.jpg" alt="You"style="height:200px;">
+        <h2>You</h2>
+        <h4 class="w3-opacity">Assistant Designer</h4>
+        <p>You want your next event to be gorgeous, fabulous, and fun!</p>
+      </div>
     </div>
 
-    <div class="w3-col w3-display-container" style="width:34%;">
-      <h3><a href=""><b>Blog Post Title Here</b></a></h3>
-      <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
-      <img src="Resources/Images/DiscoBalls.png" alt="House" style="height:500px">
-    </div>
-  </div>
+    <!-- Contact Section -->
+    <div name="contact" class="w3-container" id="contact">
+      <h2 class="w3-border-bottom"><b>Contact</b></h2>
+      <p><b>Let's get in touch and talk about your and our next project.</b></p>
+       <p>
+         <a style="padding-right: 20px" href="https://www.facebook.com/jacksonstreetdesign">Facebook</a>
+         <a style="padding-right: 20px" href="https://www.pintrest.com/andie_jackson">Pintrest</a>
+         <a style="padding-right: 20px" href="mailto:andiejackson@jaskconstreetdesign.com?subject=Lets%20Work%20Together!">Email</a>
+        <!-- <a style="padding-right: 20px" href="https://www.google.com/maps/place/6522+Meadow+Rd,+Dallas,+TX+75230/@32.885962,-96.7944385,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9e2d2b33b6ad:0x348f2ebab0a43fa6!8m2!3d32.885962!4d-96.7922498"><u>Address:</u> 6522 Meadow Road Dallas, Texas 75230 <a> -->
+        <a>Phone: (214)478-9070</a>
 
+        </p>
+    </div>
 
-  <!-- About Section -->
-  <div name="about" class="w3-container" id="about">
-    <h2 class="w3-border-bottom"><b>About</b></h2>
-    <h4>We are a Collaborative Design Studio Located in Dallas, TX and Specializing in the Designing of Parties, Places, and Homes.</h4>
-  </div>
-
-  <div class="w3-container w3-grayscale">
-    <div class="w3-col w3-margin-bottom" style="width:25%">
-      <img src="Resources/Images/andie.jpg" alt="Andie Jackson" style="height:200px;">
-      <h2>Andrea "Andie" Jackson</h2>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>I'm Andie Jackson and I design homes, events and even you. Follow me and see where my creativity leads next!</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:25%">
-      <img src="Resources/Images/jojo.jpg" alt="Jojo Jackson"style="height:200px;">
-      <h2>Jojo Jackson</h2>
-      <p class="w3-opacity">Lead Designer</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:25%">
-      <img src="Resources/Images/demo_portrait3.jpg" alt="Ruby Jackson"style="height:200px;">
-      <h2>Ruby Jackson</h2>
-      <p class="w3-opacity">Assistant Designer</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:25%">
-      <img src="Resources/Images/demo_portrait4.jpg" alt="You"style="height:200px;">
-      <h2>You</h2>
-      <h4 class="w3-opacity">Assistant Designer</h4>
-      <p>You want your next event to be gorgeous, fabulous, and fun!</p>
-    </div>
   </div>
 
-  <!-- Contact Section -->
-  <div name="contact" class="w3-container" id="contact">
-    <h2 class="w3-border-bottom"><b>Contact</b></h2>
-    <p><b>Let's get in touch and talk about your and our next project.</b></p>
-     <p>
-       <a style="padding-right: 20px" href="https://www.facebook.com/jacksonstreetdesign">Facebook</a>
-       <a style="padding-right: 20px" href="https://www.pintrest.com/andie_jackson">Pintrest</a>
-       <a style="padding-right: 20px" href="mailto:andiejackson@jaskconstreetdesign.com?subject=Lets%20Work%20Together!">Email</a>
-      <!-- <a style="padding-right: 20px" href="https://www.google.com/maps/place/6522+Meadow+Rd,+Dallas,+TX+75230/@32.885962,-96.7944385,17z/data=!3m1!4b1!4m5!3m4!1s0x864e9e2d2b33b6ad:0x348f2ebab0a43fa6!8m2!3d32.885962!4d-96.7922498"><u>Address:</u> 6522 Meadow Road Dallas, Texas 75230 <a> -->
-      <a>Phone: (214)478-9070</a>
-
-      </p>
+  <!-- AddToAny BEGIN -->
+  <div class="w3-bottom w3-padding-24" id="addtoany">
+    <div class="a2a_kit a2a_kit_size_32 a2a_default_style w3-display-middle">
+      <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+      <a class="a2a_button_facebook" data-no-instant></a>
+      <a class="a2a_button_twitter" data-no-instant></a>
+      <a class="a2a_button_pinterest" data-no-instant></a>
+      <a class="a2a_button_Email" data-no-instant></a>
+    </div>
+    <script>
+      var a2a_config = a2a_config || {};
+      a2a_config.linkname = "Jackson Street Design Notebook";
+      a2a_config.linkurl = window.location.href.toString();
+      a2a_config.color_main = "D7E5ED";
+      a2a_config.color_border = "AECADB";
+      a2a_config.color_link_text = "333333";
+      a2a_config.color_link_text_hover = "333333";
+    </script>
+    <script async src="https://static.addtoany.com/menu/page.js"></script>
   </div>
 
-</div>
+  <!-- Mobile Sit BEGIN -->
+  <div class="w3-content" style="max-width:100vw; display:none;" id="mobile_content">
 
-<!-- AddToAny BEGIN -->
-<div class="w3-bottom w3-padding-24" id="projects">
-  <div class="a2a_kit a2a_kit_size_32 a2a_default_style w3-display-middle">
-    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-    <a class="a2a_button_facebook"></a>
-    <a class="a2a_button_twitter"></a>
-    <a class="a2a_button_pinterest"></a>
-    <a class="a2a_button_Email"></a>
-  </div>
-  <script>
-    var a2a_config = a2a_config || {};
-    a2a_config.linkname = "Jackson Street Design";
-    a2a_config.linkurl = "https://www.jacksonstreetdesign.com";
-    a2a_config.color_main = "D7E5ED";
-    a2a_config.color_border = "AECADB";
-    a2a_config.color_link_text = "333333";
-    a2a_config.color_link_text_hover = "333333";
-  </script>
-  <script async src="https://static.addtoany.com/menu/page.js"></script>
-</div>
-
-<!-- Mobile Sit BEGIN -->
-<div class="w3-content" style="max-width:100vw; display:none;" id="mobile_content">
-
-  <div class="w3-top" style="opacity: 1" id="top_bar">
-   <div class="w3-bar w3-white w3-wide w3-card-2">
-     <a href="index.html" class="w3-bar-item w3-button" id="title">JACKSON STREET DESIGN</a>
+    <div class="w3-top" style="opacity: 1" id="top_bar">
+     <div class="w3-bar w3-white w3-wide w3-card-2">
+       <a href="index.html" class="w3-bar-item w3-button" id="title">JACKSON STREET DESIGN</a>
+     </div>
    </div>
- </div>
- <br><br><br><br>
-  <div class="mobile_menu w3-padding-24">
-    <a href="projects.html" class="w3-button">Projects</a>
-    <a href="notebook.html" class="w3-button">Notebook</a>
-    <a href="#mobile_about" class="w3-button">About</a>
-    <a href="#mobile_contact" class="w3-button">Contact</a>
+   <br><br><br><br>
+    <div class="mobile_menu w3-padding-24">
+      <a href="projects.html" class="w3-button">Projects</a>
+      <a href="notebook.html" class="w3-button">Notebook</a>
+      <a href="#mobile_about" class="w3-button">About</a>
+      <a href="#mobile_contact" class="w3-button">Contact</a>
+    </div>
+
+    <div name="about" class="w3-container" id="recent posts">
+      <h2 class="w3-border-bottom"><b>Recent Posts</b></h2>
+      <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
+        <h3><a href="farm_to_table.html"><b>Farm to Table Anniversary Celebration</b></a></h3>
+        <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
+        <p class="w3-col" style="top:0px">
+          This April, I was honored to design and host a Texas Farm to Table Anniversary Celebration for my friends Annelise Pedersen and Chris Spafford. Every five years, Annelise and Chris celebrate their residence in the U.S. This year, they opened their beautiful new Forest Hills home to friends, family and colleagues. When I say beautiful, I mean House Beautiful&trade; caliber beautiful. <a href="farm_to_table.html" class="read-more"> Read more...</a>
+        </p> <img src="Resources/Blog_Entries/Farm_To_Table/2.jpg" alt="House" class="w3-col">
+        <p></p>
+      </div>
+      <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
+        <a class="read-more" href="notebook.html">See more posts...</a>
+      </div>
+    </div>
+
+    <div name="mobile_about" class="w3-container" id="mobile_about">
+      <h2 class="w3-border-bottom"><b>About</b></h2>
+      <p>We are a Collaborative Design Studio Located in Dallas, TX. We Specialize in the Designing of Parties, Places, and Homes.<p>
+    </div>
+
+    <div class="w3-container w3-grayscale">
+      <div class="w3-col w3-margin-bottom" style="width:100%">
+        <img class = "profileimg" src="Resources/Images/andie.jpg" alt="Andie Jackson">
+        <h2>Andrea "Andie" Jackson</h2>
+        <p class="w3-opacity">CEO & Founder</p>
+        <p>I'm Andie Jackson and I design homes, events and even you. Follow me and see where my creativity leads next!</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:100%">
+        <img class = "profileimg" src="Resources/Images/jojo.jpg" alt="Jojo Jackson">
+        <h2>Jojo Jackson</h2>
+        <p class="w3-opacity">Lead Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:100%">
+        <img class = "profileimg" src= "Resources/Images/ruby.JPG" alt="Ruby Jackson">
+        <h2>Ruby Jackson</h2>
+        <p class="w3-opacity">Assistant Designer</p>
+        <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
+      </div>
+      <div class="w3-col w3-margin-bottom" style="width:100%">
+        <img class = "profileimg" src="Resources/Images/demo_portrait4.jpg" alt="You">
+        <h2>You</h2>
+        <p class="w3-opacity">Assistant Designer</p>
+        <p>You want your next event to be gorgeous, fabulous, and fun!</p>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div name="mobile_contact" class="w3-container section-padding" id="mobile_contact">
+      <h2 class="w3-border-bottom"><b>Contact</b></h2>
+      <p><b>Let's get in touch and talk about your and our next project.</b></p>
+       <p>
+         <a style="padding-right: 20px" href="https://www.facebook.com/jacksonstreetdesign">Facebook</a>
+         <a style="padding-right: 20px" href="https://www.pintrest.com/andie_jackson">Pintrest</a>
+         <a style="padding-right: 20px" href="mailto:andiejackson@jaskconstreetdesign.com?subject=Lets%20Work%20Together!">Email</a>
+        <a><u>Phone:</u> (214)478-9070</a>
+
+        </p>
+    </div>
   </div>
 
-  <div name="about" class="w3-container" id="recent posts">
-    <h2 class="w3-border-bottom"><b>Recent Posts</b></h2>
-    <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
-      <h3><a href="farm_to_table.html"><b>Farm to Table Anniversary Celebration</b></a></h3>
-      <a style="top:-10px; position:relative;" href="notebook.html">Posted in Notebook on 9/21/2017</a>
-      <p class="w3-col" style="top:0px">
-        This April, I was honored to design and host a Texas Farm to Table Anniversary Celebration for my friends Annelise Pedersen and Chris Spafford. Every five years, Annelise and Chris celebrate their residence in the U.S. This year, they opened their beautiful new Forest Hills home to friends, family and colleagues. When I say beautiful, I mean House Beautiful&trade; caliber beautiful. <a href="farm_to_table.html" class="read-more"> Read more...</a>
-      </p> <img src="Resources/Blog_Entries/Farm_To_Table/2.jpg" alt="House" class="w3-col">
-      <p></p>
-    </div>
-    <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
-      <a class="read-more" href="notebook.html">See more posts...</a>
-    </div>
-  </div>
-
-  <div name="mobile_about" class="w3-container" id="mobile_about">
-    <h2 class="w3-border-bottom"><b>About</b></h2>
-    <p>We are a Collaborative Design Studio Located in Dallas, TX. We Specialize in the Designing of Parties, Places, and Homes.<p>
-  </div>
-
-  <div class="w3-container w3-grayscale">
-    <div class="w3-col w3-margin-bottom" style="width:100%">
-      <img class = "profileimg" src="Resources/Images/andie.jpg" alt="Andie Jackson">
-      <h2>Andrea "Andie" Jackson</h2>
-      <p class="w3-opacity">CEO & Founder</p>
-      <p>I'm Andie Jackson and I design homes, events and even you. Follow me and see where my creativity leads next!</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:100%">
-      <img class = "profileimg" src="Resources/Images/jojo.jpg" alt="Jojo Jackson">
-      <h2>Jojo Jackson</h2>
-      <p class="w3-opacity">Lead Designer</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:100%">
-      <img class = "profileimg" src= "Resources/Images/ruby.JPG" alt="Ruby Jackson">
-      <h2>Ruby Jackson</h2>
-      <p class="w3-opacity">Assistant Designer</p>
-      <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elvwentum.</p>
-    </div>
-    <div class="w3-col w3-margin-bottom" style="width:100%">
-      <img class = "profileimg" src="Resources/Images/demo_portrait4.jpg" alt="You">
-      <h2>You</h2>
-      <p class="w3-opacity">Assistant Designer</p>
-      <p>You want your next event to be gorgeous, fabulous, and fun!</p>
-    </div>
-  </div>
-
-  <!-- Contact Section -->
-  <div name="mobile_contact" class="w3-container section-padding" id="mobile_contact">
-    <h2 class="w3-border-bottom"><b>Contact</b></h2>
-    <p><b>Let's get in touch and talk about your and our next project.</b></p>
-     <p>
-       <a style="padding-right: 20px" href="https://www.facebook.com/jacksonstreetdesign">Facebook</a>
-       <a style="padding-right: 20px" href="https://www.pintrest.com/andie_jackson">Pintrest</a>
-       <a style="padding-right: 20px" href="mailto:andiejackson@jaskconstreetdesign.com?subject=Lets%20Work%20Together!">Email</a>
-      <a><u>Phone:</u> (214)478-9070</a>
-
-      </p>
-  </div>
-</div>
-
-
-
-
-<script>
-  /* When the user clicks on the button,
-  toggle between hiding and showing the dropdown content */
-  function myFunction() {
-      document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  // Close the dropdown if the user clicks outside of it
-  window.onclick = function(e) {
-    if (!e.target.matches('.dropbtn')) {
-      var myDropdown = document.getElementById("myDropdown");
-        if (myDropdown.classList.contains('show')) {
-          myDropdown.classList.remove('show');
-        }
+  <script>
+    /* When the user clicks on the button,
+    toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
     }
-  }
 
-  $( document ).ready(function() {
-      var isMobile = window.matchMedia("only screen and (max-width: 760px)");
-
-      if (isMobile.matches) {
-        document.getElementById("page_content").style.display = "none";
-        document.getElementById("top_bar").style.display = "none";
-        document.getElementById("projects").style.display = "none";
-        document.getElementById("mobile_content").style.display = "inline-block";
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+      if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
       }
-   }
-  );
+    }
 
-</script>
+    $( document ).ready(function() {
+        var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
-<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+        if (isMobile.matches) {
+          document.getElementById("page_content").style.display = "none";
+          document.getElementById("top_bar").style.display = "none";
+          document.getElementById("addtoany").style.display = "none";
+          document.getElementById("mobile_content").style.display = "inline-block";
+        }
+     }
+    );
+
+  </script>
+
+  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+  <script data-no-instant>InstantClick.init();</script>
 </body>
 </html>

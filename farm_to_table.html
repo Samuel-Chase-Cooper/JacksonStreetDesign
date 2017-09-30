@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="shortcut icon" type="image/ico" href="resources/favicon.ico"/>
+  <link rel="shortcut icon" type="image/ico" href="Resources/favicon.ico"/>
   <link href=' http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>
   <link href=' http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <link href=' http://fonts.googleapis.com/css?family=Bungee+Outline' rel='stylesheet' type='text/css'>
-
+  <link href=' http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
   <title>Jackson Street Design</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="secondary.css">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="Resources/instantclick.min.js"></script>
   <meta name="viewport" content="width=device-width, user-scalable=no">
 
 </head>
@@ -40,13 +41,13 @@
 
   <div name="about" class="w3-container" id="farmtotable">
     <div class="w3-col w3-display-container" style="width:100%; transition: ease all .6s; padding-bottom:2vh;">
-      <h1 style="padding-bottom:0px;">Farm to Table Anniversary Celebration</h1>
+      <h1 style="padding-bottom:0px; font-size:48px">Farm to Table Anniversary Celebration</h1>
       <p class="w3-col" style="width:100%">
         This April, I was honored to design and host a Texas Farm to Table Anniversary Celebration for my friends Annelise Pedersen and Chris Spafford. Every five years, Annelise and Chris celebrate their residence in the U.S. This year, they opened their beautiful new Forest Hills home to friends, family and colleagues. When I say beautiful, I mean House Beautiful&trade; caliber beautiful. <a href="#" class="read-more"> Read more...</a>
       </p><p class="w3-col">
-        Chris and Annelise are devout foodies with a penchant for home grown veggies and Texas BBQ. Given those proclivities and their beautiful back yard, the Farm to Table theme was a natural fit. The elements came together quickly: local BBQ, a bourbon bar, Texas blues and pecan pie.
+        Chris and Annelise are devout foodies with a penchant for home-grown veggies and Texas BBQ. Given those proclivities and their beautiful back yard, the Farm to Table theme was a natural fit. The elements came together quickly: local BBQ, a bourbon bar, Texas blues and pecan pie.
       </p><p class="w3-col">
-        The yard was strewn with lights, the landscaping just right, the entire plan came together and then came the thunderstorm. Thus is the peril of planning an outdoor party in Texas. So we pivoted to Plan B, moved the food inside, secured the last tent in Dallas and turned the garage into a proper Bourbon Bar. Despite the last minute changes, the plan held and the event was a smashing success. Happy Anniversary Chris and Annelise! Cheers!
+        The yard was strewn with lights, the landscaping just right, the entire plan came together, and then came the thunderstorm. Thus is the peril of planning an outdoor party in Texas. So we pivoted to Plan B, moved the food inside, secured the last tent in Dallas and turned the garage into a proper Bourbon Bar. Despite the last minute changes, the plan held and the event was a smashing success. Happy Anniversary Chris and Annelise! Cheers!
       </p>
       <p class="w3-col" style="font-style:italic">
         Ranunculus and Queen Anne’s Lace grace a gilded cocktail table.
@@ -87,9 +88,9 @@
 </div>
 
 <!-- AddToAny BEGIN -->
-<div class="w3-bottom w3-padding-24" id="projects">
+<div class="w3-bottom w3-padding-24" id="addtoany">
   <div class="a2a_kit a2a_kit_size_32 a2a_default_style w3-display-middle">
-    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+    <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
     <a class="a2a_button_facebook"></a>
     <a class="a2a_button_twitter"></a>
     <a class="a2a_button_pinterest"></a>
@@ -97,8 +98,8 @@
   </div>
   <script>
     var a2a_config = a2a_config || {};
-    a2a_config.linkname = "Farm to Table Anniversary Celebrartion by Jackson Street Design";
-    a2a_config.linkurl = "https://www.jacksonstreetdesign.com";
+    a2a_config.linkname = "Jackson Street Design Notebook";
+    a2a_config.linkurl = window.location.href.toString();
     a2a_config.color_main = "D7E5ED";
     a2a_config.color_border = "AECADB";
     a2a_config.color_link_text = "333333";
@@ -186,7 +187,7 @@
       if (isMobile.matches) {
         document.getElementById("page_content").style.display = "none";
         document.getElementById("top_bar").style.display = "none";
-        document.getElementById("projects").style.display = "none";
+        document.getElementById("addtoany").style.display = "none";
         document.getElementById("mobile_content").style.display = "inline-block";
       }
    }
@@ -195,5 +196,6 @@
 </script>
 
 <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+<script data-no-instant>InstantClick.init();</script>
 </body>
 </html>
