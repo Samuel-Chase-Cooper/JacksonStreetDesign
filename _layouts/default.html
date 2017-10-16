@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{% include head_links.html %}
+	</head>
+
+	<body>
+		{% include top_bar.html %}
+		{{ content }}
+		{% include add_to_any.html %}
+
+		<script src="js/toggle_functions.js"/>
+	  <script src="js/mobile_functions.js">
+	  <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+	  <script data-no-instant>InstantClick.init();</script>
+		<script>
+			var myElement = document.querySelector("header");
+			// construct an instance of Headroom, passing the element
+			var headroom  = new Headroom(myElement);
+			// initialise
+			headroom.init();
+		</script>
+	</body>
+	</html>
